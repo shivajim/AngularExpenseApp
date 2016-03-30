@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="Expenses_app_module">
+<head>
+	<meta charset="utf-8"></meta>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+</head>
+<body> 
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container" ng-controller="HomeController">
+			<div class="navbar-header">
+				<span class="navbar-brand">{{title}}</span>
+			</div>
+		</div>
+	</nav>
+	<div ng-view class="container">
+	</div>
+	
+	<script src="lib/underscore-min.js"></script>
+	<script src="lib/jquery-1.12.2.min.js"></script>
+	<script src="lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+	<script src="lib/angular.min.js"></script>
+	<script src="lib/angular-route.min.js"></script>	
+	<script src="app.js"></script>
+	
+
+</body>
+</html>
