@@ -11,7 +11,7 @@ exp_app.config(function($routeProvider){
 		templateUrl:'views/expenses.html',
 		controller:'Expenses_controller'
 	})
-	.when('/form_expenses/new',{
+	.when('/form_expenses/new_nn',{
 		templateUrl:'views/expenses_form.html',
 		controller:'ExpensesFormController'
 	})
@@ -65,10 +65,7 @@ exp_app.factory('Expenses_service',function(){
 	return exp_service; 
 });
 
-exp_app.controller('Expenses_controller',['$scope','Expenses_service', function($scope, Expenses_service){
-	$scope.expenses= Expenses_service.expenses;
 
-}]);
 
 
 exp_app.controller('ExpensesFormController',['$scope','$routeParams','Expenses_service','$location', function($scope,$routeParams,Expenses_service, $location){
